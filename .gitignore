@@ -1,0 +1,15 @@
+.env
+__pycache__/
+*.pyc
+.vscode/
+.DS_Store
+node_modules/
+
+dist/
+build/
+*.log
+coverage/
+*.sqlite3
+.idea/
+*.iml
+*.swp
