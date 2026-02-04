@@ -5,7 +5,11 @@ import streamlit as st
 
 def plot_income_expense_trend(df):
     if df.empty:
-        return None
+        fig = go.Figure()
+        fig.add_annotation(text="No data available", xref="paper", yref="paper",
+                          x=0.5, y=0.5, showarrow=False, font=dict(size=20, color="gray"))
+        fig.update_layout(title="Income vs Expenses Trend")
+        return fig
     
     df['date'] = pd.to_datetime(df['date'])
     monthly = df.groupby([pd.Grouper(key='date', freq='M'), 'type'])['amount'].sum().reset_index()
@@ -19,7 +23,11 @@ def plot_income_expense_trend(df):
 def plot_expense_pie(df):
     expenses = df[df['type'] == 'Expense']
     if expenses.empty:
-        return None
+        fig = go.Figure()
+        fig.add_annotation(text="No expense data available", xref="paper", yref="paper",
+                          x=0.5, y=0.5, showarrow=False, font=dict(size=20, color="gray"))
+        fig.update_layout(title="Expense Breakdown")
+        return fig
     
     fig = px.pie(expenses, values='amount', names='category', 
                  title="Expense Breakdown",
