@@ -82,7 +82,7 @@ def plot_budget_vs_actual(budget_df, expense_df):
         '#00E676' for x in merged['usage']
     ]
 
-    fig = go.Figure(data=[
+    fig = go.Fig(data=[
         go.Bar(name='Limit', x=merged['category'], y=merged['Limit'], 
                marker_color=COLORS['Limit'], opacity=0.3),
         go.Bar(name='Spent', x=merged['category'], y=merged['Spent'], 
