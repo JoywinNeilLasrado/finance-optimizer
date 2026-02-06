@@ -98,5 +98,5 @@ def plot_budget_vs_actual(budget_df, expense_df):
         yaxis=dict(showgrid=False),
         showlegend=True
     )
-    return fig
+    return figfgr
 
