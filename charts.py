@@ -98,6 +98,10 @@ def plot_budget_vs_actual(budget_df, expense_df):
         yaxis=dict(showgrid=False),
         showlegend=True
     )
+<<<<<<< HEAD
     return fig tyr
 
+=======
+    return figfgr
+>>>>>>> 02a67402bb8ba142aebb7672cdf5e76c300a4703
 
