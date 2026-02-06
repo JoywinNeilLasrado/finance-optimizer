@@ -100,9 +100,5 @@ def plot_budget_vs_actual(budget_df, expense_df):
     )
     return fig
 
-<<<<<<< HEAD
 #hjdsvcjsavcjyds dfjhvbsjdhbvfd hbdfvjhbhdxfuv
 #vhcdvjhsd
-=======
-#hjdsvcjsavcjyds hbdsjvc vergvdfs ytffthchtc
->>>>>>> 9f691eb34e2007f81cad5099687fd1524779f5b7
